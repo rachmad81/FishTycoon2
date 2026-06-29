@@ -1,6 +1,6 @@
 let data = [];
 
-fetch('data.json')
+fetch('data_fin.json')
     .then((r) => r.json())
     .then((json) => {
         data = json;
