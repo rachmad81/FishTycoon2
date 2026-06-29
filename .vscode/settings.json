@@ -1,0 +1,104 @@
+{
+  //   ===============================
+  //   GLOBAL EDITOR SETTINGS
+  //   ===============================
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "selection",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+
+  // ===============================
+  // DEFAULT FORMATTER
+  // ===============================
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // ===============================
+  // PRETTIER SETTINGS
+  // ===============================
+  "prettier.tabWidth": 4,
+  "prettier.useTabs": false,
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+  "prettier.trailingComma": "es5",
+  "prettier.printWidth": 100,
+  "prettier.arrowParens": "always",
+  "prettier.endOfLine": "lf",
+  "prettier.requireConfig": false,
+
+  // ===============================
+  // FORMATTER PER LANGUAGE
+  // ===============================
+
+  // JavaScript / TypeScript
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // JSON / CSS / HTML
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // ===============================
+  // BLADE LARAVEL
+  // ===============================
+  "[blade]": {
+    "editor.defaultFormatter": "shufo.vscode-blade-formatter",
+    "editor.formatOnSave": true
+  },
+
+  // ===============================
+  // PHP (LARAVEL)
+  // ===============================
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.formatOnSave": true
+  },
+  "php-cs-fixer.onsave": true,
+  "php-cs-fixer.rules": "@PSR12",
+
+  // ===============================
+  // LARAVEL & PHP INTELLISENSE
+  // ===============================
+  "intelephense.format.enable": false,
+  "intelephense.diagnostics.enable": true,
+
+  // ===============================
+  // FILE & UI
+  // ===============================
+  "files.autoSave": "off",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/vendor": true
+  },
+
+  // ===============================
+  // TERMINAL (WINDOWS)
+  // ===============================
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+
+  // ===============================
+  // GIT
+  // ===============================
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false
+}
