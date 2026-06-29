@@ -1,19 +1,30 @@
-=<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Fish Tycoon Q</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pencarian Kombinasi</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Primbon Fishtycoon</h1>
-    <p>Ciptakan turunanmu sekarang.</p>
 
-    <button onclick="halo()">Klik Saya</button>
+<div class="container">
+<h2>Pencarian Kombinasi</h2>
 
-    <script>
-        function halo() {
-            alert("Halo dari GitHub Pages!");
-        }
-    </script>
+<label>Input 1</label>
+<select id="input1"></select>
+
+<label>Input 2</label>
+<select id="input2"></select>
+
+<button onclick="cari()">Cari</button>
+
+<div id="hasil">
+Silakan pilih kombinasi
+</div>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
