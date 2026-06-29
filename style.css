@@ -32,7 +32,8 @@ button:hover {
     background: #1976d2;
 }
 
-#hasil {
+#hasil,
+#hasil1 {
     margin-top: 20px;
     font-size: 22px;
     font-weight: bold;

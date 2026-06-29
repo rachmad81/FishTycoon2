@@ -37,7 +37,7 @@ function cari_fish() {
     let hasil1 = 'Tidak ditemukan';
 
     for (let d of data_fish) {
-        if ((d.a === a && d.b === b) || (d.a === b && d.b === a)) {
+        if ((d.a === a1 && d.b === b1) || (d.a === b1 && d.b === a1)) {
             hasil1 = d.hasil;
             break;
         }
