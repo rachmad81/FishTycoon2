@@ -16,6 +16,7 @@ fetch('data_fish.json')
 
         const s11 = document.getElementById('input11');
         const s21 = document.getElementById('input21');
+        const sfish = document.getElementById('inputfish');
 
         daftar_fish.forEach((nama) => {
             let o11 = document.createElement('option');
@@ -27,6 +28,11 @@ fetch('data_fish.json')
             o21.value = nama;
             o21.textContent = nama;
             s21.appendChild(o21);
+
+            let ofish = document.createElement('option');
+            ofish.value = nama;
+            ofish.textContent = nama;
+            sfish.appendChild(ofish);
         });
     });
 
@@ -44,4 +50,31 @@ function cari_fish() {
     }
 
     document.getElementById('hasil1').innerHTML = hasil1;
+}
+
+function cari_kombinasi_fish() {
+    let fish1 = inputfish.value;
+    let i = 0;
+
+    let hasilfish = '<table border="1" style="width: 100%;border-collapse: collapse">';
+
+    for (let d of data_fish) {
+        if (d.hasil === fish1) {
+            if (i % 2 == 0) {
+                hasilfish +=
+                    '<tr style="background: #ccc !important"><td>' +
+                    d.a +
+                    '</td><td> & </td><td>' +
+                    d.b +
+                    '</td></tr>';
+            } else {
+                hasilfish += '<tr><td>' + d.a + '</td><td> & </td><td>' + d.b + '</td></tr>';
+            }
+            i++;
+        }
+    }
+
+    hasilfish += '</table>';
+
+    document.getElementById('hasilfish').innerHTML = hasilfish;
 }

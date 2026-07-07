@@ -7,6 +7,9 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <div style="overflow: auto">
+            <img src="./magic.png" alt="" />
+        </div>
         <div class="container">
             <h2>Pencarian Kombinasi Fin</h2>
 
@@ -20,6 +23,7 @@
 
             <div id="hasil">Silakan pilih kombinasi</div>
         </div>
+
         <div class="container">
             <h2>Pencarian Kombinasi Fish</h2>
 
@@ -32,6 +36,28 @@
             <button onclick="cari_fish()">Cari</button>
 
             <div id="hasil1">Silakan pilih kombinasi</div>
+        </div>
+
+        <div class="container">
+            <h2>Pencarian Hasil Fin</h2>
+
+            <label>Fin</label>
+            <select id="inputfin"></select>
+
+            <button onclick="cari_kombinasi_fin()">Cari</button>
+
+            <div id="hasilfin">Silakan pilih kombinasi</div>
+        </div>
+
+        <div class="container">
+            <h2>Pencarian Hasil Fish</h2>
+
+            <label>Fish</label>
+            <select id="inputfish"></select>
+
+            <button onclick="cari_kombinasi_fish()">Cari</button>
+
+            <div id="hasilfish">Silakan pilih kombinasi</div>
         </div>
 
         <script src="script_fin.js"></script>
